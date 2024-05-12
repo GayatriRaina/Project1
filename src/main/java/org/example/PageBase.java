@@ -262,4 +262,52 @@ public class PageBase extends TestBase {
 
     }
 
+    @Test
+    public void checkout() throws InterruptedException {
+        driver.findElement(By.xpath("/html/body/div[2]/header/div[1]/div/ul/li[2]/a")).click();
+        driver.findElement(By.xpath("//input[@name=\"login[username]\"]")).sendKeys("gayatriraina97@gmail.com");
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,500)");
+
+        driver.findElement(By.xpath("//input[@name=\"login[password]\"]")).sendKeys("Gayu@567890");
+        driver.findElement(By.xpath("//button[@class=\"action login primary\"]")).click();
+
+        Thread.sleep(4000);
+        driver.findElement(By.xpath("//a[@class=\"action showcart\"]")).click();
+        js.executeScript("window.scrollBy(0,500)");
+
+        driver.findElement(By.xpath("//*[@id=\"top-cart-btn-checkout\"]")).click();
+
+        js.executeScript("window.scrollBy(0,1000)");
+        Thread.sleep(4000);
+        driver.findElement(By.xpath("/html/body/div[2]/main/div[2]/div/div[3]/div[4]/ol/li[1]/div[2]/form/div/fieldset/div/div[1]/div/input")).sendKeys("abc lane");
+
+        driver.findElement(By.xpath("/html/body/div[2]/main/div[2]/div/div[3]/div[4]/ol/li[1]/div[2]/form/div/div[4]/div/input")).sendKeys("Pune");
+
+        driver.findElement(By.xpath("/html/body/div[2]/main/div[2]/div/div[3]/div[4]/ol/li[1]/div[2]/form/div/div[7]/div/input")).sendKeys("411014");
+
+        Select country = new Select(driver.findElement(By.xpath("/html/body/div[2]/main/div[2]/div/div[3]/div[4]/ol/li[1]/div[2]/form/div/div[8]/div/select")));
+        country.selectByVisibleText("India");
+
+        Select state = new Select(driver.findElement(By.xpath("/html/body/div[2]/main/div[2]/div/div[3]/div[4]/ol/li[1]/div[2]/form/div/div[5]/div/select")));
+        state.selectByVisibleText("Maharashtra");
+
+        driver.findElement(By.xpath("/html/body/div[2]/main/div[2]/div/div[3]/div[4]/ol/li[1]/div[2]/form/div/div[9]/div/input")).sendKeys("6006243294");
+
+        WebElement radio = driver.findElement(By.xpath("//*[@id=\"checkout-shipping-method-load\"]/table/tbody/tr[2]/td[1]/input"));
+        radio.click();
+
+        driver.findElement(By.xpath("//*[@id=\"shipping-method-buttons-container\"]/div/button")).click();
+
+        Thread.sleep(4000);
+        js.executeScript("window.scrollBy(0,500)");
+
+        WebElement checkbox = driver.findElement(By.xpath("//input[@id=\"billing-address-same-as-shipping-checkmo\"]"));
+        checkbox.click();
+
+        driver.findElement(By.xpath("//button[@class=\"action primary checkout\"]")).click();
+        
+
+    }
+
 }
