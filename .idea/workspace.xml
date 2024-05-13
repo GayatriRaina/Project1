@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc012961-a7d5-4aeb-858a-633cbf50fca0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ElementID/ElementIDS.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PageBase.java" afterDir="false" />
     </list>
@@ -47,11 +48,15 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "TestNG.PageBase.Tab1.executor": "Run",
+    "TestNG.PageBase.Tab2.executor": "Run",
     "TestNG.PageBase.Tab3.executor": "Run",
     "TestNG.PageBase.Tab4.executor": "Run",
     "TestNG.PageBase.Tab5.executor": "Run",
     "TestNG.PageBase.checkout.executor": "Run",
     "TestNG.PageBase.executor": "Run",
+    "TestNG.PageBase.footer1.executor": "Run",
+    "TestNG.PageBase.footer2.executor": "Run",
+    "TestNG.PageBase.registration.executor": "Run",
     "TestNG.PageBase.removingProducts.executor": "Run",
     "TestNG.PageBase.verifypage.executor": "Run",
     "TestNG.RegistrationPage.executor": "Run",
@@ -62,23 +67,13 @@
     "TestNG.Test1.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/HP/Desktop/ExcelRProject1/Project1"
+    "last_opened_file_path": "C:/Users/HP/Desktop/ExcelRProject1/Project1",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.PageBase.checkout">
-    <configuration name="Tab4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Tab4" />
-      <module name="ExcelRProject1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.PageBase.registration">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Project1" />
       <method v="2">
@@ -92,7 +87,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PageBase.Tab3" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PageBase.Tab1" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ExcelRProject1" />
       <extension name="coverage">
         <pattern>
@@ -102,7 +97,25 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.PageBase" />
-      <option name="METHOD_NAME" value="Tab3" />
+      <option name="METHOD_NAME" value="Tab1" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PageBase.Tab4" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ExcelRProject1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.PageBase" />
+      <option name="METHOD_NAME" value="Tab4" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -128,7 +141,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PageBase.checkout" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PageBase.registration" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ExcelRProject1" />
       <extension name="coverage">
         <pattern>
@@ -138,7 +151,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.PageBase" />
-      <option name="METHOD_NAME" value="checkout" />
+      <option name="METHOD_NAME" value="registration" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -166,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.PageBase.checkout" />
+        <item itemvalue="TestNG.PageBase.registration" />
         <item itemvalue="TestNG.PageBase.removingProducts" />
+        <item itemvalue="TestNG.PageBase.Tab1" />
         <item itemvalue="TestNG.PageBase.Tab5" />
-        <item itemvalue="TestNG.PageBase.Tab3" />
-        <item itemvalue="Application.Tab4" />
+        <item itemvalue="TestNG.PageBase.Tab4" />
       </list>
     </recent_temporary>
   </component>
@@ -191,5 +204,71 @@
       <updated>1714889497893</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/PageBase.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/PageBase.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/PageBase.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/PageBase.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/PageBase.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/PageBase.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/PageBase.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ElementID/ElementIDS.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ElementID/ElementIDS.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ElementID/ElementIDS.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ElementID/ElementIDS.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ElementID/ElementIDS.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

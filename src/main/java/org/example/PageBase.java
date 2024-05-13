@@ -1,5 +1,6 @@
 package org.example;
 
+import com.example.ElementID.ElementIDS;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -13,6 +14,8 @@ import static org.testng.AssertJUnit.assertEquals;
 
 
 public class PageBase extends TestBase {
+
+    ElementIDS elementIDS = new ElementIDS();
 
     @BeforeMethod
     public void url(){
@@ -31,18 +34,12 @@ public class PageBase extends TestBase {
     public void registration() {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
-
         driver.get("https://magento.softwaretestingboard.com/");
-        driver.findElement(By.xpath("/html/body/div[2]/header/div[1]/div/ul/li[3]/a")).click();
-
-        driver.findElement(By.xpath("//input[@id='firstname']")).sendKeys("Gayatri");
+        elementIDS.getRegistrationID();
+        elementIDS.getRegistrationFirstName();
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,500)");
-        driver.findElement(By.xpath("//input[@id='lastname']")).sendKeys("Raina");
-        driver.findElement(By.xpath("//input[@id='email_address']")).sendKeys("gayatriraina97@gmail.com");
-        driver.findElement(By.xpath("//input[@id='password']")).sendKeys("Gayu@567890");
-        driver.findElement(By.xpath("//input[@id='password-confirmation']")).sendKeys("Gayu@567890");
-        driver.findElement(By.xpath("//button[@class=\"action submit primary\"]")).click();
+        elementIDS.enterDetails();
     }
 
     @Test(priority = 2)
@@ -253,12 +250,11 @@ public class PageBase extends TestBase {
         driver.findElement(By.xpath("//a[@class=\"action showcart\"]")).click();
         js.executeScript("window.scrollBy(0,500)");
 
-        driver.findElement(By.xpath("//*[@id=\"mini-cart\"]/li[1]/div/div/div[2]/div[2]/a")).click();
+        driver.findElement(By.xpath("//a[@class='action delete']")).click();
 
         Alert alert = driver.switchTo().alert();
         String alertMessage= alert.getText();
         alert.accept();
-        System.out.println("Alert msg is : "+alertMessage);
 
     }
 
@@ -306,8 +302,26 @@ public class PageBase extends TestBase {
         checkbox.click();
 
         driver.findElement(By.xpath("//button[@class=\"action primary checkout\"]")).click();
-        
+        }
+
+    @Test
+    public void footer1() throws InterruptedException {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,2000)");
+
+        driver.findElement(By.xpath("/html/body/div[2]/footer/div/div/div/ul/li[1]/a")).click();
 
     }
+
+    @Test
+    public void footer2(){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,2000)");
+
+        driver.findElement(By.xpath("/html/body/div[2]/footer/div/div/div/ul/li[2]/a")).click();
+        js.executeScript("window.scrollby(0,2000)");
+
+    }
+
 
 }
