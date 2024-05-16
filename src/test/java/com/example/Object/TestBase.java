@@ -1,11 +1,7 @@
 package com.example.Object;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.Test;
-
 import static org.testng.AssertJUnit.assertEquals;
 
 public class TestBase {
@@ -76,6 +72,5 @@ public class TestBase {
         assertEquals(expectedTitle,actualTitle);
         System.out.println("Verify Sale Tab");
     }
-
 
 }

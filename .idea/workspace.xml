@@ -5,18 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc012961-a7d5-4aeb-858a-633cbf50fca0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/Object/Cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/Object/Footer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/Object/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/Object/Tabs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/testscenario/CartMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/testscenario/EcomBaseUtilities.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/testscenario/FooterMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/testscenario/LoginMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/testscenario/TabsMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/Object/PageBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/testscenario/PageBaseMethod.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PageBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/Object/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/Object/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/Object/Footer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/Object/Footer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/Object/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/Object/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/Object/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/Object/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/testscenario/CartMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/testscenario/CartMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/testscenario/FooterMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/testscenario/FooterMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/testscenario/LoginMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/testscenario/LoginMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/testscenario/TabsMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/testscenario/TabsMethod.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/testscenario/TestMethodForEcom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/testscenario/TestMethodForEcom.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,6 +72,7 @@
     "TestNG.PageBase.registration.executor": "Run",
     "TestNG.PageBase.removingProducts.executor": "Run",
     "TestNG.PageBase.verifypage.executor": "Run",
+    "TestNG.PageBaseMethod.PageBase.executor": "Run",
     "TestNG.RegistrationPage.executor": "Run",
     "TestNG.RegistrationPage.invalidlogin.executor": "Run",
     "TestNG.RegistrationPage.login.executor": "Run",
@@ -91,7 +91,7 @@
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.CartMethod.Cart">
+  <component name="RunManager" selected="TestNG.LoginMethod.login">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Project1" />
       <method v="2">
@@ -141,6 +141,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LoginMethod.login" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ExcelRProject1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.testscenario.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.testscenario" />
+      <option name="MAIN_CLASS_NAME" value="com.testscenario.LoginMethod" />
+      <option name="METHOD_NAME" value="login" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PageBaseMethod.PageBase" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ExcelRProject1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.testscenario.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.testscenario" />
+      <option name="MAIN_CLASS_NAME" value="com.testscenario.PageBaseMethod" />
+      <option name="METHOD_NAME" value="PageBase" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PageBase.checkout" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ExcelRProject1" />
       <extension name="coverage">
@@ -159,49 +195,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PageBase.removingProducts" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="ExcelRProject1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.PageBase" />
-      <option name="METHOD_NAME" value="removingProducts" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TabsMethod.tab" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="ExcelRProject1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.testscenario.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.testscenario" />
-      <option name="MAIN_CLASS_NAME" value="com.testscenario.TabsMethod" />
-      <option name="METHOD_NAME" value="tab" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginMethod.login" />
+        <item itemvalue="TestNG.PageBaseMethod.PageBase" />
+        <item itemvalue="TestNG.FooterMethod.Footer" />
         <item itemvalue="TestNG.CartMethod.Cart" />
         <item itemvalue="TestNG.PageBase.checkout" />
-        <item itemvalue="TestNG.PageBase.removingProducts" />
-        <item itemvalue="TestNG.FooterMethod.Footer" />
-        <item itemvalue="TestNG.TabsMethod.tab" />
       </list>
     </recent_temporary>
   </component>

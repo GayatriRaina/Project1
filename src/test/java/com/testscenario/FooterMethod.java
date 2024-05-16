@@ -2,17 +2,13 @@ package com.testscenario;
 
 import com.example.Object.Footer;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
-import java.util.concurrent.TimeUnit;
 
 public class FooterMethod extends EcomBaseUtilities {
 
     static WebDriver driver;
     @Test
-    public void Footer(){
+    public void Footer() throws InterruptedException {
         driver = super.Initialization();
         Footer footer = new Footer(driver);
         footer.footer1();
@@ -23,6 +19,7 @@ public class FooterMethod extends EcomBaseUtilities {
         footer.footer6();
         footer.footer7();
         footer.footer8();
+        footer.returnorder();
         super.Closure();
     }
 }

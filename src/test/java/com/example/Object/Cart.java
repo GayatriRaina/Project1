@@ -1,6 +1,5 @@
 package com.example.Object;
 
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -39,7 +38,4 @@ public class Cart {
         driver.findElement(c5).click();
 
     }
-
-
-
 }
