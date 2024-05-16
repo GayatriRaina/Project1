@@ -13,37 +13,69 @@ public class TestBase {
     public TestBase(WebDriver driver) {
         this.driver = driver;
     }
-    By serchBox = By.xpath("https://magento.softwaretestingboard.com/");
-    By createaccount = By.xpath("/html/body/div[2]/header/div[1]/div/ul/li[3]/a");
-    By firstname = By.xpath("//input[@id='firstname']");
-    By lastname = By.xpath("//input[@id='lastname']");
-    By emailId = By.xpath("//input[@id='email_address']");
-    By password = By.xpath("//input[@id='password']");
-    By confirmpass = By.xpath("//input[@id='password-confirmation']");
-    By submit = By.xpath("//button[@class=\"action submit primary\"]");
-
-
-
-
+    String url = "https://magento.softwaretestingboard.com/";
+    String new1 = "https://magento.softwaretestingboard.com/what-is-new.html";
+    String new2 = "https://magento.softwaretestingboard.com/women.html";
+    String new3 = "https://magento.softwaretestingboard.com/men.html";
+    String new4 = "https://magento.softwaretestingboard.com/gear.html";
+    String new5 = "https://magento.softwaretestingboard.com/training.html";
+    String new6 = "https://magento.softwaretestingboard.com/sale.html";
 
     public void verifypage(){
-
-        String actualTitle = String.valueOf(serchBox);
-        String expectedTitle = "By.xpath: https://magento.softwaretestingboard.com/";
+        driver.get(url);
+        String actualTitle = driver.getTitle();
+        String expectedTitle = "Home Page";
         assertEquals(expectedTitle,actualTitle);
+        System.out.println("Verify Home Page");
     }
 
-public void enterDetails(){
-    driver.findElement(createaccount).click();
-    driver.findElement(firstname).sendKeys("Gayatri");
-    driver.findElement(lastname).sendKeys("Raina");
-    JavascriptExecutor js = (JavascriptExecutor) driver;
-    js.executeScript("window.scrollBy(0,500)");
-    driver.findElement(emailId).sendKeys("gayatriraina97@gmail.com");
-    driver.findElement(password).sendKeys("Gayu@567890");
-    driver.findElement(confirmpass).sendKeys("Gayu@567890");
-    driver.findElement(submit).click();
+    public void t1(){
+        driver.get(new1);
+        String actualTitle = driver.getTitle();
+        String expectedTitle = "What's New";
+        assertEquals(expectedTitle,actualTitle);
+        System.out.println("Verify What's New Tab");
+    }
 
-}
+    public void t2(){
+        driver.get(new2);
+        String actualTitle = driver.getTitle();
+        String expectedTitle = "Women";
+        assertEquals(expectedTitle,actualTitle);
+        System.out.println("Verify Women Tab");
+    }
+
+    public void t3(){
+        driver.get(new3);
+        String actualTitle = driver.getTitle();
+        String expectedTitle = "Men";
+        assertEquals(expectedTitle,actualTitle);
+        System.out.println("Verify Men Tab");
+    }
+
+    public void t4(){
+        driver.get(new4);
+        String actualTitle = driver.getTitle();
+        String expectedTitle = "Gear";
+        assertEquals(expectedTitle,actualTitle);
+        System.out.println("Verify Gear Tab");
+    }
+
+    public void t5(){
+        driver.get(new5);
+        String actualTitle = driver.getTitle();
+        String expectedTitle = "Training";
+        assertEquals(expectedTitle,actualTitle);
+        System.out.println("Verify Training Tab");
+    }
+
+    public void t6(){
+        driver.get(new6);
+        String actualTitle = driver.getTitle();
+        String expectedTitle = "Sale";
+        assertEquals(expectedTitle,actualTitle);
+        System.out.println("Verify Sale Tab");
+    }
+
 
 }

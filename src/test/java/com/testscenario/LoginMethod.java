@@ -1,5 +1,6 @@
 package com.testscenario;
 
+import com.example.Object.Login;
 import com.example.Object.TestBase;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -8,20 +9,16 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class TestMethodForEcom extends EcomBaseUtilities{
+public class LoginMethod extends EcomBaseUtilities{
     static WebDriver driver;
 
     @Test
-    public void Initialization1() {
+    public void login(){
         driver = super.Initialization();
-        TestBase testBase = new TestBase(driver);
-        testBase.verifypage();
-        testBase.t1();
-        testBase.t2();
-        testBase.t3();
-        testBase.t4();
-        testBase.t5();
-        testBase.t6();
+        Login login = new Login(driver);
+        login.enterDetails();
+        login.invalidcred();
+        login.validcred();
         super.Closure();
     }
 }

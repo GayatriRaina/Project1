@@ -5,9 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc012961-a7d5-4aeb-858a-633cbf50fca0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/Object/TestBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/testscenario/TestMethodForEcom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/Object/Cart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/Object/Footer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/Object/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/Object/Tabs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/testscenario/CartMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/testscenario/EcomBaseUtilities.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/testscenario/FooterMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/testscenario/LoginMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/testscenario/TabsMethod.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PageBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/Object/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/Object/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/testscenario/TestMethodForEcom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/testscenario/TestMethodForEcom.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,11 +57,15 @@
     "Application.Tab6.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.CartMethod.Cart.executor": "Run",
+    "TestNG.FooterMethod.Footer.executor": "Run",
+    "TestNG.LoginMethod.login.executor": "Run",
     "TestNG.PageBase.Tab1.executor": "Run",
     "TestNG.PageBase.Tab2.executor": "Run",
     "TestNG.PageBase.Tab3.executor": "Run",
     "TestNG.PageBase.Tab4.executor": "Run",
     "TestNG.PageBase.Tab5.executor": "Run",
+    "TestNG.PageBase.Tab6.executor": "Run",
     "TestNG.PageBase.checkout.executor": "Run",
     "TestNG.PageBase.executor": "Run",
     "TestNG.PageBase.footer1.executor": "Run",
@@ -63,6 +77,7 @@
     "TestNG.RegistrationPage.invalidlogin.executor": "Run",
     "TestNG.RegistrationPage.login.executor": "Run",
     "TestNG.RegistrationPage.registration.executor": "Run",
+    "TestNG.TabsMethod.tab.executor": "Run",
     "TestNG.Test1.Test1.executor": "Run",
     "TestNG.Test1.executor": "Run",
     "TestNG.TestBase.verifypage.executor": "Run",
@@ -76,7 +91,7 @@
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.TestMethodForEcom.createaccount">
+  <component name="RunManager" selected="TestNG.CartMethod.Cart">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Project1" />
       <method v="2">
@@ -90,7 +105,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PageBase.registration" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CartMethod.Cart" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ExcelRProject1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.testscenario.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.testscenario" />
+      <option name="MAIN_CLASS_NAME" value="com.testscenario.CartMethod" />
+      <option name="METHOD_NAME" value="Cart" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FooterMethod.Footer" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ExcelRProject1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.testscenario.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.testscenario" />
+      <option name="MAIN_CLASS_NAME" value="com.testscenario.FooterMethod" />
+      <option name="METHOD_NAME" value="Footer" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PageBase.checkout" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ExcelRProject1" />
       <extension name="coverage">
         <pattern>
@@ -100,7 +151,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.PageBase" />
-      <option name="METHOD_NAME" value="registration" />
+      <option name="METHOD_NAME" value="checkout" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -126,25 +177,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestBase.verifypage" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="ExcelRProject1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.Object.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.Object" />
-      <option name="MAIN_CLASS_NAME" value="com.example.Object.TestBase" />
-      <option name="METHOD_NAME" value="verifypage" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestMethodForEcom.Initialization1" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TabsMethod.tab" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ExcelRProject1" />
       <extension name="coverage">
         <pattern>
@@ -153,26 +186,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.testscenario" />
-      <option name="MAIN_CLASS_NAME" value="com.testscenario.TestMethodForEcom" />
-      <option name="METHOD_NAME" value="Initialization1" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestMethodForEcom.createaccount" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="ExcelRProject1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.testscenario.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.testscenario" />
-      <option name="MAIN_CLASS_NAME" value="com.testscenario.TestMethodForEcom" />
-      <option name="METHOD_NAME" value="createaccount" />
+      <option name="MAIN_CLASS_NAME" value="com.testscenario.TabsMethod" />
+      <option name="METHOD_NAME" value="tab" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -182,11 +197,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestMethodForEcom.createaccount" />
-        <item itemvalue="TestNG.TestMethodForEcom.Initialization1" />
-        <item itemvalue="TestNG.TestBase.verifypage" />
-        <item itemvalue="TestNG.PageBase.registration" />
+        <item itemvalue="TestNG.CartMethod.Cart" />
+        <item itemvalue="TestNG.PageBase.checkout" />
         <item itemvalue="TestNG.PageBase.removingProducts" />
+        <item itemvalue="TestNG.FooterMethod.Footer" />
+        <item itemvalue="TestNG.TabsMethod.tab" />
       </list>
     </recent_temporary>
   </component>
@@ -235,11 +250,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/example/ElementID/ElementIDS.java</url>
           <line>19</line>
           <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/testscenario/TestMethodForEcom.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
