@@ -19,7 +19,6 @@ public class FooterMethod extends EcomBaseUtilities {
         footer.footer6();
         footer.footer7();
         footer.footer8();
-        footer.returnorder();
         super.Closure();
     }
 }

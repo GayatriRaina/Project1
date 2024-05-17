@@ -5,18 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc012961-a7d5-4aeb-858a-633cbf50fca0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/Object/PageBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/testscenario/PageBaseMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/Object/ReturnOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/testscenario/ReturnOrderMethod.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/Object/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/Object/Cart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/Object/Footer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/Object/Footer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/Object/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/Object/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/Object/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/Object/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/testscenario/CartMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/testscenario/CartMethod.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/testscenario/FooterMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/testscenario/FooterMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/testscenario/LoginMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/testscenario/LoginMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/testscenario/TabsMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/testscenario/TabsMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/testscenario/TestMethodForEcom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/testscenario/TestMethodForEcom.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +70,7 @@
     "TestNG.RegistrationPage.invalidlogin.executor": "Run",
     "TestNG.RegistrationPage.login.executor": "Run",
     "TestNG.RegistrationPage.registration.executor": "Run",
+    "TestNG.ReturnOrderMethod.ReturnOrder.executor": "Run",
     "TestNG.TabsMethod.tab.executor": "Run",
     "TestNG.Test1.Test1.executor": "Run",
     "TestNG.Test1.executor": "Run",
@@ -91,7 +85,7 @@
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.LoginMethod.login">
+  <component name="RunManager" selected="TestNG.ReturnOrderMethod.ReturnOrder">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Project1" />
       <method v="2">
@@ -177,17 +171,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PageBase.checkout" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ReturnOrderMethod.ReturnOrder" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ExcelRProject1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="com.testscenario.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.PageBase" />
-      <option name="METHOD_NAME" value="checkout" />
+      <option name="PACKAGE_NAME" value="com.testscenario" />
+      <option name="MAIN_CLASS_NAME" value="com.testscenario.ReturnOrderMethod" />
+      <option name="METHOD_NAME" value="ReturnOrder" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -197,11 +191,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ReturnOrderMethod.ReturnOrder" />
         <item itemvalue="TestNG.LoginMethod.login" />
         <item itemvalue="TestNG.PageBaseMethod.PageBase" />
         <item itemvalue="TestNG.FooterMethod.Footer" />
         <item itemvalue="TestNG.CartMethod.Cart" />
-        <item itemvalue="TestNG.PageBase.checkout" />
       </list>
     </recent_temporary>
   </component>
